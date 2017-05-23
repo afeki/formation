@@ -1,0 +1,15 @@
+<p>
+  formation-list works!
+</p>
+
+<pre>{{formations | json}}</pre>
+<ul>
+  <li *ngFor="let item of formations">
+    <p>{{item.title}}</p>
+    <p>{{item.id | currency:'EUR': true}}</p>
+    <p><a [routerLink]="['details', item.id]">View</a>
+    <p><a [routerLink]="['form', item.id]">Update</a>
+    <p><a (click)="delete(item.id)">Delete</a>
+    {{item.title}}</p>
+  </li>
+</ul>
