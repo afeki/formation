@@ -7,6 +7,8 @@ import { FormationRoutingModule } from './formation-routing.module';
 import { FormationFormComponent } from './formation-form/formation-form.component';
 import { FormationListComponent } from './formation-list/formation-list.component';
 import { FormationDetailsComponent } from './formation-details/formation-details.component';
+import { FormationContainerComponent } from './formation-container/formation-container.component';
+import { FormationListContainerComponent } from './formation-list-container/formation-list-container.component';
 
 @NgModule({
   imports: [
@@ -18,6 +20,8 @@ import { FormationDetailsComponent } from './formation-details/formation-details
   ],
   declarations: [FormationFormComponent,
    FormationListComponent,
-   FormationDetailsComponent]
+   FormationDetailsComponent,
+   FormationContainerComponent,
+   FormationListContainerComponent]
 })
 export class FormationModule { }
